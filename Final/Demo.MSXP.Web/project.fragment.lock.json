@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "exports": {
+    "Demo.MSXP.Domain/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.1",
+      "compile": {
+        "bin/Debug/Demo.MSXP.Domain.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Demo.MSXP.Domain.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Demo.MSXP.Domain.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Demo.MSXP.Interfaces/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.1",
+      "compile": {
+        "bin/Debug/Demo.MSXP.Interfaces.dll": {}
+      },
+      "runtime": {
+        "../packages/Microsoft.ServiceFabric.5.2.207/lib/net45/Microsoft.ServiceFabric.Internal.Strings.dll": {},
+        "../packages/Microsoft.ServiceFabric.5.2.207/lib/net45/Microsoft.ServiceFabric.Internal.dll": {},
+        "../packages/Microsoft.ServiceFabric.5.2.207/lib/net45/System.Fabric.Strings.dll": {},
+        "../packages/Microsoft.ServiceFabric.5.2.207/lib/net45/System.Fabric.dll": {},
+        "../packages/Microsoft.ServiceFabric.Actors.2.2.207/lib/net45/Microsoft.ServiceFabric.Actors.dll": {},
+        "../packages/Microsoft.ServiceFabric.Actors.2.2.207/lib/net45/ServiceFabricServiceModel.dll": {},
+        "../packages/Microsoft.ServiceFabric.Data.2.2.207/lib/net45/Microsoft.ServiceFabric.Data.Interfaces.dll": {},
+        "../packages/Microsoft.ServiceFabric.Data.2.2.207/lib/net45/Microsoft.ServiceFabric.Data.dll": {},
+        "../packages/Microsoft.ServiceFabric.Services.2.2.207/lib/net45/Microsoft.ServiceFabric.Services.dll": {},
+        "bin/Debug/Demo.MSXP.Interfaces.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Demo.MSXP.Interfaces.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+﻿<div class="container-fluid">
+    <h1>Cart</h1>
+    <div class="col-md-4" ng-if="$ctrl.cart.length > 0 && $ctrl.orderId == null">
+        <table class="table table-condensed">
+            <thead>
+                <tr><th>Product</th><th>Unit price</th><th>Quantity</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in $ctrl.cart">
+                    <td>{{item.product.title}}</td>
+                    <td>{{item.product.price}}</td>
+                    <td>{{item.qty}}</td>
+                    <td>{{item.product.price * item.qty}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">Total</td><td>{{$ctrl.totalPrice}}</td></tr>
+            </tfoot>
+        </table>
+        <p>
+
+        <p>
+            <span>Name : </span><input type="text" ng-model="$ctrl.wishlistname" />
+        </p>
+        <p>
+            <span>Expiration Time : </span><input type="text" ng-model="$ctrl.wishlistexpiration" />
+        </p>
+        <p>
+            <button type="button" class="btn btn-primary btn-lg" ng-click="$ctrl.placeWishlist()">Create wishlist</button>
+        </p>
+        </p>
+    </div>
+    <p ng-if="$ctrl.cart.length <= 0 && $ctrl.orderId == null">Oops, your cart is empty !</p>
+    <div class="alert alert-success" role="alert" ng-if="$ctrl.orderId != null">Wishlist created or updated ({{$ctrl.orderId}})</div>
+</div>
