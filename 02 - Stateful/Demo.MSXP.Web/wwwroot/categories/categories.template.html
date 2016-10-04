@@ -1,0 +1,14 @@
+﻿<div class="container-fluid">
+    <h1>Categories</h1>
+    <div class="row">
+        <div class="col-sm-4 col-md-2" ng-repeat="category in $ctrl.categories">
+            <div class="thumbnail">
+                <!--<img src="" alt="{{category.name}}">-->
+                <div class="caption">
+                    <a ng-href="#!/categories/{{category.id}}"><h2>{{category.name}}</h2></a>
+                    <p>{{category.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

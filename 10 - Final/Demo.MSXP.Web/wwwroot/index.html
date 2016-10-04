@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="storeApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Store</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">DemoStore</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#!/wishlist">My wishlist</a></li>
+            </ul>
+            <cart-preview></cart-preview>
+        </div>
+    </nav>
+
+    <div ng-view></div>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/cart/cart.module.js"></script>
+    <script src="core/cart/cart.service.js"></script>
+    <script src="categories/categories.module.js"></script>
+    <script src="categories/categories.component.js"></script>
+    <script src="wishlist/wishlist.module.js"></script>
+    <script src="wishlist/wishlist.component.js"></script>
+    <script src="products/products.module.js"></script>
+    <script src="products/products.component.js"></script>
+    <script src="cart/cart.module.js"></script>
+    <script src="cart/cart.component.js"></script>
+    <script src="cartPreview/cartPreview.module.js"></script>
+    <script src="cartPreview/cartPreview.component.js"></script>
+</body>
+</html>

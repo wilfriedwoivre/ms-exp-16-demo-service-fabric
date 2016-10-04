@@ -1,0 +1,20 @@
+﻿<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>{{$ctrl.category.name}}</h1>
+        <p>{{$ctrl.category.description}}</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="product in $ctrl.products">
+            <div class="thumbnail">
+                <!--<img src="" alt="{{product.title}}">-->
+                <div class="caption">
+                    <h2>{{product.title}} &mdash; {{product.price}}</h2>
+                    <p>{{product.description}}</p>
+                    <ul>
+                        <li ng-repeat="tag in product.targs"><span class="label label-default">{{tag}}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
